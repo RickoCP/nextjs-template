@@ -11,9 +11,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "husky": "^8.0.1",
     "lint": "^0.7.0",
     "next": "12.2.5",
     "prettier": "^1.19.1",
