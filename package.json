@@ -10,10 +10,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
+    "lint": "^0.7.0",
     "next": "12.2.5",
+    "prettier": "^1.19.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
