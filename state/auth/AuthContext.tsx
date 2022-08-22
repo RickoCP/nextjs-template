@@ -6,6 +6,10 @@ interface IAuthContext {
   logOut: () => void;
 }
 
+interface Props {
+  children?: React.ReactNode;
+}
+
 const defaultValue: IAuthContext = {
   authenticated: false,
   login: () => undefined,
@@ -14,7 +18,7 @@ const defaultValue: IAuthContext = {
 
 const AuthContext = createContext<IAuthContext>(defaultValue);
 
-export const AuthProvider: React.FC = ({ children }) => {
+export const AuthProvider: React.FC<Props> = ({ children }) => {
   const [authenticated, setAuthenticated] = useState(
     defaultValue.authenticated
   );
