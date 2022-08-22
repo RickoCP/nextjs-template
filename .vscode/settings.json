@@ -5,6 +5,9 @@
     "source.fixAll": true,
     "source.organizeImports": true
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   // "cSpell.words": [
   //   "codenames",
   //   "colour",
